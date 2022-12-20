@@ -126,3 +126,51 @@ main {
   color: var(--primary_bright-orange);
   text-decoration: none;
 }
+
+
+@media only screen and (min-width: 50rem) { 
+
+  body {
+    justify-content: center;
+  }
+
+  main {
+    max-width: 55rem;
+    margin-bottom: 2rem;
+  }
+
+  article {
+    display: flex;
+  }
+
+  .card:first-child {
+    border-radius: 0.5rem 0 0 0.5rem ;
+  }
+  
+  .card:last-child {
+     border-radius: 0 0.5rem  0.5rem 0;
+  }
+
+  .card h1 {
+    font-size: 2.5rem;
+  }
+
+  .card {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .btn {
+    margin-top: 4rem;
+  }
+
+  .btn:hover {
+    background-color: transparent;
+    color: inherit;
+    outline: 2px solid var(--neutral_light-gray)
+  }
+
+}
